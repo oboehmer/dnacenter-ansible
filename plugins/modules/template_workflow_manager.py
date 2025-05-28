@@ -3256,6 +3256,7 @@ class Template(DnacBase):
                 "type": "MANAGED_DEVICE_UUID",
                 "versionedTemplateId": version_template_id,
                 "params": template_dict,
+                "resourceParams": [{"type": "MANAGED_DEVICE_UUID", "scope": "RUNTIME"}],
             }
             target_info_list.append(target_device_dict)
             del target_device_dict
